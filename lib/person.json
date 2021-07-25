@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Kirtan Patel",
+        "age" : "23",
+        "height" : "65",
+        "gender" : "male"
+    },
+    {
+        "name" : "Abhi Patel",
+        "age" : "20",
+        "height" : "165",
+        "gender" : "male"
+    },
+    {
+        "name" : "Abhi Patel",
+        "age" : "20",
+        "height" : "165",
+        "gender" : "male"
+    },
+    {
+        "name" : "Hari Patel",
+        "age" : "25",
+        "height" : "115",
+        "gender" : "male"
+    },
+    {
+        "name" : "Hemil Patel",
+        "age" : "26",
+        "height" : "125",
+        "gender" : "male"
+    }
+]
