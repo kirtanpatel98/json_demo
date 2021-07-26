@@ -6,12 +6,16 @@ class ApiServices {
   static var _get = http.Client();
 
   static Future<List<PersonModels>?> getdata() async {
-    var uri = Uri.parse(Json.userData);
-    var response = await _get.post(uri);
-    if (response.statusCode == 200) {
-      return decodePerson(response.body);
-    } else {
-      return null;
+    try {
+      var uri = Uri.parse(Json.userData);
+      var response = await _get.post(uri);
+      if (response.statusCode == 200) {
+        return decodePerson(response.body);
+      } else {
+        return null;
+      }
+    } catch (e) {
+      print(e.toString());
     }
   }
 }

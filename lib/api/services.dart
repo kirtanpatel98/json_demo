@@ -1,4 +1,4 @@
 class Json {
   static const String userData =
-      "https://github.com/kirtanpatel98/json_demo/blob/main/lib/person.json";
+      "https://raw.githubusercontent.com/kirtanpatel98/json_demo/main/lib/person.json?token=ARHJ76ILV7AJXPSOF6AZAVDA73QTM";
 }
