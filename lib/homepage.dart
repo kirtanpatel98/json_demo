@@ -20,50 +20,55 @@ class HomePage extends StatelessWidget {
   }
 
   _buildContainer() {
-    return ListView.builder(
-        itemCount: usercontroller.userList.length,
-        shrinkWrap: true,
-        itemBuilder: (c, i) {
-          return Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 200,
-              width: Get.width,
-              color: Colors.red,
-              child: Column(
-                children: [
-                  Text(
-                    usercontroller.userList[i].name,
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.red,
+    return Obx(
+      () {
+        return ListView.builder(
+          itemCount: usercontroller.userList.length,
+          shrinkWrap: true,
+          itemBuilder: (c, i) {
+            return Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                width: Get.width,
+                color: Colors.red,
+                child: Column(
+                  children: [
+                    Text(
+                      usercontroller.userList[i].name,
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
-                  Text(
-                    usercontroller.userList[i].age,
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.red,
+                    Text(
+                      usercontroller.userList[i].age,
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
-                  Text(
-                    usercontroller.userList[i].gender,
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.red,
+                    Text(
+                      usercontroller.userList[i].gender,
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
-                  Text(
-                    usercontroller.userList[i].height,
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.red,
+                    Text(
+                      usercontroller.userList[i].height,
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          );
-        });
+            );
+          },
+        );
+      },
+    );
   }
 }

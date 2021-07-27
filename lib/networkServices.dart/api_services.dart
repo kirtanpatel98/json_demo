@@ -8,7 +8,7 @@ class ApiServices {
   static Future<List<PersonModels>?> getdata() async {
     try {
       var uri = Uri.parse(Json.userData);
-      var response = await _get.post(uri);
+      var response = await _get.get(uri);
       if (response.statusCode == 200) {
         return decodePerson(response.body);
       } else {
